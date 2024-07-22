@@ -1,0 +1,7 @@
+.circularProgressbar
+{
+    filter: drop-shadow(2px 4px 6px white);/* Adds a drop shadow with 2px horizontal offset, 4px vertical offset, 6px blur radius, and white color */
+    stroke-width: 15px; /* Sets the width of the stroke to 15 pixels */
+    
+
+}
