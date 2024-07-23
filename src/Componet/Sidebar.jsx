@@ -52,6 +52,7 @@
 // }
 
 // export default Sidebar
+// second
 import React, { useState } from 'react';
 import logo from '../Assets/logo (2).png'; // logo of my shop
 import { SidebarData } from '../Data/SidebarData'; // the data which is used in this section
@@ -66,13 +67,13 @@ function Sidebar() {
     return (
         <React.Fragment>
             {/* Toggle button for sidebar */}
-            <div className={`fixed top-4 left-4 z-20 p-2 bg-rose-300 rounded-md max-md:${expanded ? 'hidden' : 'block'}`} onClick={() => setExpanded(true)}>
+            <div className={`fixed top-4 left-4 z-20 p-2 bg-rose-300 rounded-md max-3xl:hidden max-xl:hidden max-md:${expanded ? 'hidden' : 'block'}`}  onClick={() => setExpanded(true)}>
                 <HiOutlineBars4 size={24} className="text-white" />
             </div>
             {/* Sidebar */}
-            <div className={`flex flex-col max-md:fixed max-md:z-10 max-md:bg-red-200 max-md:w-1/2 max-md:pr-4 max-md:h-full relative pt-12 transition-all duration-300 ease-in-out ${expanded ? 'block' : 'hidden'}`}>
+            <div className={`flex flex-col max-md:fixed max-md:z-10 max-md:bg-red-200 max-md:w-1/2 max-md:pr-4 max-md:h-full relative pt-12 transition-all duration-300 ease-in-out  max-md:${expanded ? 'block' : 'hidden'}`}>
                 {/* Close button for sidebar */}
-                <div className="fixed top-4 right-4 z-20 p-2 bg-rose-300 rounded-lg max-md:block" onClick={() => setExpanded(false)}>
+                <div className={`fixed top-4 right-4 z-20 p-2 max-3xl:hidden  max-xl:hidden bg-rose-300 rounded-lg max-md:${expanded ? 'block' : 'hidden'}`} onClick={() => setExpanded(false)}>
                     <HiOutlineX size={24} className="text-white" />
                 </div>
                 {/* Logo */}
@@ -112,5 +113,7 @@ function Sidebar() {
 }
 
 export default Sidebar;
+
+
 
 
